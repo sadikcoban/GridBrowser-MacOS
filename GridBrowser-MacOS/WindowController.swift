@@ -9,6 +9,9 @@ import Cocoa
 
 class WindowController: NSWindowController {
 
+    @IBOutlet weak var textField: NSTextField!
+    
+    
     override func windowDidLoad() {
         super.windowDidLoad()
         window?.titleVisibility = .hidden
