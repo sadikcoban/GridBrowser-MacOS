@@ -6,21 +6,46 @@
 //
 
 import Cocoa
+import WebKit
 
 class ViewController: NSViewController {
+    
+
+    private lazy var rows: NSStackView = {
+        let view = NSStackView()
+        view.orientation = .vertical
+        view.distribution = .fillEqually
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        addSubviews()
+        setupConsts()
+    }
+    
+    private func addSubviews(){
+        view.addSubview(rows)
+    }
+    
+    private func setupConsts(){
+        
     }
 
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
+
+    func makeWebView() -> NSView {
+        let webView = WKWebView()
+        webView.navigationDelegate = self
+        webView.wantsLayer = true
+        webView.load(URLRequest(url: URL(string: "https://www.apple.com")!))
+        return webView
     }
 
+}
+
+// MARK: - Toolbar Actions
+extension ViewController {
     
     @IBAction func urlEntered(_ sender: NSTextField) {
         
@@ -37,7 +62,8 @@ class ViewController: NSViewController {
     @IBAction func adjustColumns(_ sender: NSSegmentedControl) {
         
     }
-    
-
 }
 
+extension ViewController: WKNavigationDelegate {
+    
+}
