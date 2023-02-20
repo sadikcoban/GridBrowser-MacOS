@@ -7,6 +7,7 @@
 
 import Cocoa
 import WebKit
+import SnapKit
 
 class ViewController: NSViewController {
     

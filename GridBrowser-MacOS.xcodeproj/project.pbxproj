@@ -12,6 +12,7 @@
 		9448FA2329A3FA0000EBD879 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9448FA2229A3FA0000EBD879 /* Assets.xcassets */; };
 		9448FA2629A3FA0000EBD879 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9448FA2429A3FA0000EBD879 /* Main.storyboard */; };
 		9448FA2E29A40CB100EBD879 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9448FA2D29A40CB100EBD879 /* WindowController.swift */; };
+		9448FA3129A4134500EBD879 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9448FA3029A4134500EBD879 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9448FA3129A4134500EBD879 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +82,9 @@
 			dependencies = (
 			);
 			name = "GridBrowser-MacOS";
+			packageProductDependencies = (
+				9448FA3029A4134500EBD879 /* SnapKit */,
+			);
 			productName = "GridBrowser-MacOS";
 			productReference = 9448FA1B29A3F9FF00EBD879 /* GridBrowser-MacOS.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +113,9 @@
 				Base,
 			);
 			mainGroup = 9448FA1229A3F9FF00EBD879;
+			packageReferences = (
+				9448FA2F29A4134500EBD879 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 9448FA1C29A3F9FF00EBD879 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -339,6 +347,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9448FA2F29A4134500EBD879 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9448FA3029A4134500EBD879 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9448FA2F29A4134500EBD879 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9448FA1329A3F9FF00EBD879 /* Project object */;
 }
