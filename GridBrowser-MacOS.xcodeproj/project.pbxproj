@@ -11,6 +11,7 @@
 		9448FA2129A3F9FF00EBD879 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9448FA2029A3F9FF00EBD879 /* ViewController.swift */; };
 		9448FA2329A3FA0000EBD879 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9448FA2229A3FA0000EBD879 /* Assets.xcassets */; };
 		9448FA2629A3FA0000EBD879 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9448FA2429A3FA0000EBD879 /* Main.storyboard */; };
+		9448FA2E29A40CB100EBD879 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9448FA2D29A40CB100EBD879 /* WindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		9448FA2229A3FA0000EBD879 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9448FA2529A3FA0000EBD879 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9448FA2729A3FA0000EBD879 /* GridBrowser_MacOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GridBrowser_MacOS.entitlements; sourceTree = "<group>"; };
+		9448FA2D29A40CB100EBD879 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				9448FA1E29A3F9FF00EBD879 /* AppDelegate.swift */,
 				9448FA2029A3F9FF00EBD879 /* ViewController.swift */,
 				9448FA2229A3FA0000EBD879 /* Assets.xcassets */,
+				9448FA2D29A40CB100EBD879 /* WindowController.swift */,
 				9448FA2429A3FA0000EBD879 /* Main.storyboard */,
 				9448FA2729A3FA0000EBD879 /* GridBrowser_MacOS.entitlements */,
 			);
@@ -132,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9448FA2129A3F9FF00EBD879 /* ViewController.swift in Sources */,
+				9448FA2E29A40CB100EBD879 /* WindowController.swift in Sources */,
 				9448FA1F29A3F9FF00EBD879 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
